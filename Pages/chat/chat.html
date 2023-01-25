@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Default Css -->
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
+    <link rel="stylesheet" href="../../Assets/css/chat-style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Belanja | Chat</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg shadow" style="background-color: #fff">
+        <div class="container pb-1">
+          <!-- Nav Logo -->
+          <a class="navbar-brand d-flex align-items-center me-4" href="#">
+            <img src="../../Assets/image/logo.png" alt="" class="img-fluid small-logo" />
+            <span class="text-danger fs-4 ms-2 fw-bold">Blanja</span></a
+          >
+          <!-- End Nav Logo -->
+
+          <!-- Nav Menu Mobile Mode -->
+          <div class="d-flex d-lg-none gap-2 align-items-center">
+            <a href="#" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-bell"></i></a>
+
+            <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
+
+            <a href="" class="profile">
+              <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <!-- End Nav menu Mobile Mode -->
+
+          <div class="navbar-collapse mt-2">
+            <!-- Search and Filtering -->
+            <div class="col-12 col-lg-7 d-flex mt-md-0">
+              <div class="col-11">
+                <div class="input-form position-relative me-2">
+                  <input class="form-control me-2 rounded-pill" type="text" placeholder="Search" aria-label="Search" />
+
+                  <button class="btn position-absolute search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </div>
+              <div class="col-1 d-flex justify-content-end">
+                <button class="btn border-trinary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-filter text-trinary"></i></button>
+              </div>
+            </div>
+            <!-- End Search and Filtering -->
+
+            <!-- Nav Menu Desktop Mode -->
+            <div class="d-lg-flex d-none gap-3 ms-auto align-items-center">
+              <a href="#" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
+
+              <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-bell"></i></a>
+
+              <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
+
+              <a href="" class="profile">
+                <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
+              </a>
+            </div>
+            <!-- End Nav Menu Desktop Mode -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <main class="bg-light d-flex align-items-center">
+      <div class="container main-container d-flex align-items-center">
+        <section class="row main-row align-items-center">
+          <div class="leftside col-4 rounded overflow-x-hidden">
+            <div class="container sub-container">
+              <div class="row header-side border-1 border-bottom">
+                <div class="col-12 px-4 d-flex align-items-center">
+                  <span class="fs-5 fw-semibold">Chat</span>
+                </div>
+              </div>
+
+              <!-- Chat Others -->
+              <div class="row">
+                <div class="col-12 px-4 py-2">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-2">
+                      <img class="img-fluid rounded-circle photo-profile" src="../../Assets/image/profile.png" alt="" />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <div class="col-12">
+                          <span class="fw-semibold">Jonas Adam</span>
+                        </div>
+                        <div class="col-12 chat-slug overflow-x-hidden">
+                          <span class="color-trinary helper-text overflow-x-hidden"
+                            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ut, ducimus tempore dolorem quibusdam laudantium officia reiciendis impedit magnam. At?</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 px-4 py-2">
+                  <div class="d-flex row align-items-center">
+                    <div class="col-2">
+                      <img class="img-fluid rounded-circle photo-profile" src="../../Assets/image/profile.png" alt="" />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <div class="col-12">
+                          <span class="fw-semibold">Jonas Adam</span>
+                        </div>
+                        <div class="col-12 chat-slug overflow-x-hidden">
+                          <span class="color-trinary helper-text overflow-x-hidden"
+                            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ut, ducimus tempore dolorem quibusdam laudantium officia reiciendis impedit magnam. At?</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Chat Others -->
+            </div>
+          </div>
+
+          <div class="rightside col-8 rounded overflow-x-hidden">
+            <div class="container sub-container">
+              <div class="row header-side border-1 border-bottom">
+                <div class="col-12 px-4 py-2 d-flex align-items-center">
+                  <img class="img-fluid rounded-circle photo-profile" src="../../Assets/image/profile.png" alt="" />
+                  <span class="fw-semibold ms-2">Jonas Adam</span>
+                </div>
+              </div>
+
+              <!-- Chat Container -->
+              <div class="row h-100">
+                <div class="col-12 h-100">
+                  <div class="row row-chat">
+                    <div class="col-12 px-4 py-2">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quia fugit repudiandae quisquam voluptas ratione! Obcaecati dolorem deleniti nisi reiciendis tempora similique odit. Nesciunt fugit, aspernatur
+                        dolore vero eligendi fuga rerum non ex deleniti harum architecto officia necessitatibus ea exercitationem. Veritatis qui voluptatibus dolorem esse provident quae assumenda culpa error.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row input-chat">
+                    <div class="col-12 px-4 d-flex gap-2">
+                      <input type="text" class="form-control rounded-pill" id="chat" aria-describedby="emailHelp" placeholder="Masukan Chat..." />
+                      <button class="btn btn-danger rounded-circle"><i class="fa-regular fa-paper-plane text-light"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Chat Container -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- End Content -->
+
+    <!-- Modal Filtering -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-bottom border-2">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Filter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body px-0 overflow-x-hidden">
+            <section class="colors-filter border-bottom border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12 mb-2"><span class="fw-semibold">Colors</span></div>
+                <div class="col-12 d-flex gap-3 mt-3">
+                  <div class="color-option color-black rounded-circle"></div>
+
+                  <div class="color-option color-white shadow rounded-circle"></div>
+
+                  <div class="color-option color-red rounded-circle"></div>
+
+                  <div class="color-option color-gray rounded-circle"></div>
+
+                  <div class="color-option color-cream rounded-circle"></div>
+
+                  <div class="color-option color-blue rounded-circle"></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="sizes-filter border-bottom pt-2 border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12 mb-2"><span class="fw-semibold">Sizes</span></div>
+
+                <div class="col-12 d-flex gap-3 mt-3">
+                  <button class="sizes-btn btn border-1 border-secondary">S</button>
+                  <button class="sizes-btn btn btn-danger border-1 border-danger">M</button>
+                  <button class="sizes-btn btn btn-danger border-1 border-danger">L</button>
+                  <button class="sizes-btn btn border-1 border-secondary">XL</button>
+                  <button class="sizes-btn btn border-1 border-secondary">XS</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="category-filter border-bottom pt-2 border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12 mb-2"><span class="fw-semibold">Category</span></div>
+
+                <div class="col-12 d-flex gap-3 mt-3 flex-wrap">
+                  <button class="category-btn btn btn-danger border-1 border-danger">All</button>
+                  <button class="category-btn btn border-1 border-secondary">Woman</button>
+                  <button class="category-btn btn border-1 border-secondary">Man</button>
+                  <button class="category-btn btn border-1 border-secondary">Boys</button>
+                  <button class="category-btn btn border-1 border-secondary">Girls</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="brand-filter border-bottom pt-2 border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12"><span class="fw-semibold">Brand</span></div>
+
+                <div class="col-12">
+                  <select class="text-secondary form-select border-0 py-0 px-0 form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Adidas Originals, Jack & Jones, S.Oliver</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="d-flex pt-1 pb-4 gap-3 justify-content-center">
+            <button type="button" class="btn btn-transparent border-1 border-secondary rounded-pill px-5" data-bs-dismiss="modal">Discard</button>
+            <button type="button" class="btn btn-danger border-1 border-danger rounded-pill px-5 text-light">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Filtering -->
+
+    <script src="../../Assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+  </body>
+</html>

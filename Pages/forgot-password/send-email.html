@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Assets/bootstrap/css/bootstrap.min.css" />
+    <title>Forget Password | Email</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Logo -->
+        <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+          <img src="../../Assets/image/logo.png" alt="" />
+          <span class="text-danger fs-2 ms-2 fw-bold">MaduraStore</span>
+        </div>
+        <!-- End Logo -->
+
+        <!-- Attention Text for Login -->
+        <div class="col-12 d-flex justify-content-center mt-4">
+          <span class="fw-bold">Reset Password</span>
+        </div>
+        <!-- End Attention Text for Login -->
+
+        <!-- Sign up Form! -->
+        <div class="col-12 mt-5">
+          <div class="col-11 col-md-6 mx-auto">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" required />
+            </div>
+
+            <div class="input-group mb-3">
+              <button class="w-100 btn btn-danger rounded-pill mt-3" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Send to Email</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Sign up Form -->
+
+        <!-- Asking already have account -->
+        <div class="col-12 text-center mt-2">
+          <span class="text-secondary">Don't have MaduraStore account? <a href="#" class="text-danger text-decoration-none">Register</a></span>
+        </div>
+        <!-- End Asking already have account -->
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade border-bottom border-bottom-4" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-5 border-danger border-bottom">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-end">
+              <button type="button" class="btn-close mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <img src="../../Assets/image/modal-logo.png" alt="" />
+              <span class="text-danger fs-2 ms-2 fw-bold">MaduraStore</span>
+            </div>
+          </div>
+          <div class="modal-body mt-3">
+            <div class="row">
+              <div class="col-12 d-flex flex-column align-items-center">
+                <span class="fw-bold fs-3 text-center">Request to Reset Your Account Password</span>
+                <img class="mt-4" src="../../Assets/image/lock-logo.png" alt="" />
+
+                <div class="col-8 mt-3 text-center">
+                  <span>The following is the button for you to reset the password.</span>
+                </div>
+                <button type="button" class="btn btn-danger mt-3 mb-3 rounded-pill px-4"><a href="#" class="text-decoration-none text-light">Change Password</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <script src="../../Assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

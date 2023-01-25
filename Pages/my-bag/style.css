@@ -1,0 +1,16 @@
+.product .items {
+  box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
+  border-radius: 4px;
+}
+
+.bg-trinary {
+  background-color: #d5d5d5;
+}
+
+.product-item {
+  border-radius: 8px;
+}
+
+.quantity i {
+  cursor: pointer;
+}

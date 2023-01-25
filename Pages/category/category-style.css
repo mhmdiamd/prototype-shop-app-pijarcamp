@@ -1,0 +1,35 @@
+.price {
+  display: block;
+  margin-top: -5px;
+}
+
+.bg-trinary {
+  background-color: #d5d5d5;
+}
+
+.product-item {
+  border-radius: 8px;
+}
+
+.quantity i {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-items {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+}
+
+.gallery-items img {
+  cursor: pointer;
+}
+#product .card {
+  max-width: 208px;
+  cursor: pointer;
+}

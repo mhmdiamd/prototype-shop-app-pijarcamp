@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Default Css -->
+    <link rel="stylesheet" href="../../Assets/css/style.css" />
+
+    <!-- This style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- My Swiper -->
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../../Assets/style/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style></style>
+
+    <title>Belanja | Detail</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg shadow" style="background-color: #fff">
+      <div class="container pb-1">
+        <!-- Nav Logo -->
+        <a class="navbar-brand d-flex align-items-center me-4" href="#">
+          <img src="../../Assets/image/logo.png" alt="" class="img-fluid small-logo" />
+          <span class="text-danger fs-5 ms-2 fw-bold">Blanja</span></a
+        >
+        <!-- End Nav Logo -->
+
+        <!-- Nav Menu Mobile Mode -->
+        <div class="d-flex d-lg-none gap-2 align-items-center">
+          <a href="#" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
+
+          <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-bell"></i></a>
+
+          <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
+
+          <a href="" class="profile">
+            <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+        <!-- End Nav menu Mobile Mode -->
+
+        <div class="navbar-collapse mt-2">
+          <!-- Search and Filtering -->
+          <div class="col-12 col-lg-7 d-flex mt-md-0">
+            <div class="col-11">
+              <div class="input-form position-relative me-2">
+                <input class="form-control me-2 rounded-pill" type="text" placeholder="Search" aria-label="Search" />
+
+                <button class="btn position-absolute search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+            <div class="col-1 d-flex justify-content-end">
+              <button class="btn border-trinary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-filter text-trinary"></i></button>
+            </div>
+          </div>
+          <!-- End Search and Filtering -->
+
+          <!-- Nav Menu Desktop Mode -->
+          <div class="d-lg-flex d-none gap-3 ms-auto align-items-center">
+            <a href="#" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-bell"></i></a>
+
+            <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
+
+            <a href="" class="profile">
+              <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
+            </a>
+          </div>
+          <!-- End Nav Menu Desktop Mode -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <main id="content" class="mt-4">
+      <div class="container">
+        <div class="row border-2 border-bottom pb-5">
+          <!-- Url Path -->
+          <div class="col-12 my-4">
+            <div class="page-path descriptive-texxt color-trinary">
+              <span class="d-flex gap-3">
+                <a href="" class="text-decoration-none color-trinary">Home</a>
+                >
+                <a href="" class="text-decoration-none color-trinary">Category</a>
+                >
+                <a href="" class="text-decoration-none color-trinary">T-Shirt</a></span
+              >
+            </div>
+          </div>
+          <!-- End Url Path -->
+
+          <!-- Headline Product -->
+          <div class="col-12">
+            <div class="row">
+              <!-- Image and Gallery -->
+              <div class="col-12 col-md-4">
+                <div class="col-lg-12 d-flex justify-content-center">
+                  <img class="img-fluid rounded" src="../../Assets/image/product-detail/main-photo.png" alt="" />
+                </div>
+                <div class="col-12 gallery mt-3 d-flex gap-2 justify-content-center">
+                  <div class="gallery-items rounded">
+                    <img class="img-fluid" src="../../Assets/image/product-detail/gallery/product-1.png" alt="" />
+                  </div>
+
+                  <div class="gallery-items rounded">
+                    <img class="img-fluid" src="../../Assets/image/product-detail/gallery/product-2.png" alt="" />
+                  </div>
+
+                  <div class="gallery-items rounded">
+                    <img class="img-fluid" src="../../Assets/image/product-detail/gallery/product-3.png" alt="" />
+                  </div>
+
+                  <div class="gallery-items rounded">
+                    <img class="img-fluid" src="../../Assets/image/product-detail/gallery/product-4.png" alt="" />
+                  </div>
+
+                  <div class="gallery-items rounded">
+                    <img class="img-fluid" src="../../Assets/image/product-detail/gallery/product-5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- End Image and Gallery -->
+
+              <!-- Product Information -->
+              <div class="col-12 col-md-8 ps-3">
+                <h2 class="fs-4 fw-semibold">Baju Muslim Pria</h2>
+                <span class="descriptive-text color-trinary">Zalora Cloth</span>
+                <span class="d-flex mt-2 gap-1 align-items-center">
+                  <i class="fa-solid fa-star text-warning more-small-text"></i>
+                  <i class="fa-solid fa-star text-warning more-small-text"></i>
+                  <i class="fa-solid fa-star text-warning more-small-text"></i>
+                  <i class="fa-solid fa-star text-warning more-small-text"></i>
+                  <i class="fa-solid fa-star text-warning more-small-text"></i>
+                  <span class="color-trinary more-small-text">(10)</span>
+                </span>
+
+                <!-- Price -->
+                <div class="product-price mt-4">
+                  <span class="descriptive-text color-trinary d-block">Price</span>
+                  <span class="fs-3 fw-bold price">$ 20.0</span>
+                </div>
+                <!-- End Price -->
+
+                <!-- Colors -->
+                <div class="row mt-4">
+                  <div class="col-12 mb-2"><span class="fw-semibold descriptive-text">Color</span></div>
+                  <div class="col-12 d-flex gap-3">
+                    <div class="color-option color-black rounded-circle"></div>
+
+                    <div class="color-option color-red rounded-circle"></div>
+
+                    <div class="color-option color-blue rounded-circle"></div>
+
+                    <div class="color-option color-green rounded-circle"></div>
+                  </div>
+                </div>
+                <!-- End Colors -->
+
+                <!-- Size and Jumlah -->
+                <div class="row mt-4">
+                  <!-- Section Size -->
+                  <div class="col-6 col-md-3">
+                    <div class="row">
+                      <div class="col-12 mb-2">
+                        <span class="fw-semibold">Size</span>
+                      </div>
+                      <div class="col-12 quantity d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-minus border border-1 border-trinary rounded-circle bg-trinary text-light"></i>
+                        <span class="fw-semibold">28</span>
+                        <i class="fa-solid fa-plus border border-1 border-trinary rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Section Size -->
+
+                  <!-- Section Jumlah -->
+                  <div class="col-6 col-md-9">
+                    <div class="row">
+                      <div class="col-12 mb-2">
+                        <span class="fw-semibold">Jumlah</span>
+                      </div>
+                      <div class="col-12 quantity d-flex gap-3 align-items-center">
+                        <i class="fa-solid fa-minus border border-1 border-trinary rounded-circle bg-trinary text-light"></i>
+                        <span class="fw-semibold">1</span>
+                        <i class="fa-solid fa-plus border border-1 border-trinary rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Section Jumlah -->
+                </div>
+                <!-- End Size and Jumlah -->
+
+                <!-- Button -->
+                <div class="row mt-4 pt-2">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-2">
+                        <div class="row">
+                          <div class="col-6 px-1">
+                            <button class="btn py-2 border border-2 border-dark text-dark w-100 rounded-pill">Chat</button>
+                          </div>
+                          <div class="col-6 px-1">
+                            <button class="btn py-2 border border-2 border-dark text-dark w-100 rounded-pill">Add Bag</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 px-1">
+                        <button class="btn rounded-pill py-2 w-100 bg-danger text-light">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Button Button -->
+              </div>
+              <!-- Product Information -->
+            </div>
+          </div>
+          <!-- End Headline Product -->
+
+          <!-- Product Information -->
+          <div class="col-12 my-5 mb-0">
+            <div class="row mb-4">
+              <div class="col-12">
+                <h2 class="product-information fs-3">Product Information</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 product-condition mb-4">
+                <span class="fs-5 fw-semibold">Condition</span>
+                <span class="text-danger fw-semibold d-block">New</span>
+              </div>
+
+              <div class="col-12 product-description mb-4">
+                <span class="d-block fw-semibold fs-5 mb-3">Description</span>
+                <p class="helper-text text-secondary">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime esse quisquam dolorem voluptates voluptatibus dignissimos fugiat deleniti! Explicabo esse quam ipsum libero labore blanditiis, laboriosam rerum obcaecati
+                  culpa nesciunt repellat sapiente laudantium suscipit omnis iure minima fugiat perspiciatis quaerat aliquam maxime similique adipisci. Iste dolorem officia sint quas reiciendis eaque, voluptate, ipsam laudantium eligendi
+                  placeat exercitationem vero voluptates fugiat, veritatis facilis vitae! Sit mollitia, maxime veniam dolor quasi nisi dolorum vel? Earum, beatae! Est sit repudiandae omnis a sint accusantium. Aliquid officia, qui, debitis
+                  minima deserunt mollitia itaque cupiditate incidunt iure doloremque iusto excepturi provident enim odit minus est blanditiis!
+                </p>
+                <p class="helper-text text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste magni natus quaerat enim perferendis unde, vero neque corrupti, voluptatum, a molestias quia aliquam molestiae earum quis numquam ratione. Necessitatibus
+                  minus, et voluptates labore consequatur aperiam, consequuntur impedit porro sequi doloremque nam quis molestiae itaque. Reiciendis aliquid aspernatur soluta dolorem aut similique nisi enim expedita, magni, sint cumque
+                  ratione laudantium earum tempora corporis at laboriosam consequuntur vel atque. Accusantium eum id officia vero ex maiores quaerat perspiciatis, ullam tempore dolores amet, eos a corrupti aspernatur numquam eaque animi
+                  voluptates quo? Vel quidem dolor, expedita quo illo modi laudantium quasi quisquam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End Product Information -->
+
+          <!-- Product Review -->
+          <div class="col-12">
+            <div class="row mb-4">
+              <div class="col-12">
+                <h2 class="product-information fs-3">Product Review</h2>
+              </div>
+            </div>
+
+            <div class="d-flex w-100">
+              <div class="primary-rating me-5">
+                <div class="col-12">
+                  <div class="rating">
+                    <span class="fs-1 fw-semibold">5.0</span>
+                    <span class="color-trinary">/10</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <span class="d-flex mt-2 gap-1 align-items-center">
+                    <i class="fa-solid fa-star text-warning small-text"></i>
+                    <i class="fa-solid fa-star text-warning small-text"></i>
+                    <i class="fa-solid fa-star text-warning small-text"></i>
+                    <i class="fa-solid fa-star text-warning small-text"></i>
+                    <i class="fa-solid fa-star text-warning small-text"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="total-rating w-100">
+                <div class="d-flex w-md-25 w-100">
+                  <!-- Jumlah Start -->
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-star text-warning more-small-text"></i>
+                    <span class="small-text fw-semibold color-trinary">5</span>
+                  </div>
+                  <!-- End Jumlah Start -->
+
+                  <!-- Progress Bar -->
+                  <div class="col-md-2 mx-3 col-8 px-0 d-flex align-items-center">
+                    <div class="progress w-100 position-inherit" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                      <div class="progress-bar bg-danger" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <!-- End Progress Bar -->
+
+                  <!-- Total Feedback -->
+                  <div class="col-5">
+                    <span class="total-feedback text-secondart small-text fw-semibold color-trinary">4</span>
+                  </div>
+                  <!-- End Total Feedback -->
+                </div>
+
+                <div class="d-flex w-md-25 w-100">
+                  <!-- Jumlah Start -->
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-star text-warning more-small-text"></i>
+                    <span class="small-text fw-semibold color-trinary">4</span>
+                  </div>
+                  <!-- End Jumlah Start -->
+
+                  <!-- Progress Bar -->
+                  <div class="col-md-2 mx-3 col-8 px-0 d-flex align-items-center">
+                    <div class="progress w-100 position-inherit" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                      <div class="progress-bar bg-danger" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <!-- End Progress Bar -->
+
+                  <!-- Total Feedback -->
+                  <div class="col-5">
+                    <span class="total-feedback text-secondart small-text fw-semibold color-trinary">3</span>
+                  </div>
+                  <!-- End Total Feedback -->
+                </div>
+
+                <div class="d-flex w-md-25 w-100">
+                  <!-- Jumlah Start -->
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-star text-warning more-small-text"></i>
+                    <span class="small-text fw-semibold color-trinary">3</span>
+                  </div>
+                  <!-- End Jumlah Start -->
+
+                  <!-- Progress Bar -->
+                  <div class="col-md-2 mx-3 col-8 px-0 d-flex align-items-center">
+                    <div class="progress w-100 position-inherit" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                      <div class="progress-bar bg-danger" style="width: 50%"></div>
+                    </div>
+                  </div>
+                  <!-- End Progress Bar -->
+
+                  <!-- Total Feedback -->
+                  <div class="col-5">
+                    <span class="total-feedback text-secondart small-text fw-semibold color-trinary">3</span>
+                  </div>
+                  <!-- End Total Feedback -->
+                </div>
+
+                <div class="d-flex w-md-25 w-100">
+                  <!-- Jumlah Start -->
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-star text-warning more-small-text"></i>
+                    <span class="small-text fw-semibold color-trinary">2</span>
+                  </div>
+                  <!-- End Jumlah Start -->
+
+                  <!-- Progress Bar -->
+                  <div class="col-md-2 mx-3 col-8 px-0 d-flex align-items-center">
+                    <div class="progress w-100 position-inherit" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                      <div class="progress-bar bg-danger" style="width: 25%"></div>
+                    </div>
+                  </div>
+                  <!-- End Progress Bar -->
+
+                  <!-- Total Feedback -->
+                  <div class="col-5">
+                    <span class="total-feedback text-secondart small-text fw-semibold color-trinary">2</span>
+                  </div>
+                  <!-- End Total Feedback -->
+                </div>
+
+                <div class="d-flex w-md-25 w-100">
+                  <!-- Jumlah Start -->
+                  <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-star text-warning more-small-text"></i>
+                    <span class="small-text fw-semibold color-trinary">1</span>
+                  </div>
+                  <!-- End Jumlah Start -->
+
+                  <!-- Progress Bar -->
+                  <div class="col-md-2 mx-3 col-8 px-0 d-flex align-items-center">
+                    <div class="progress w-100 position-inherit" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 6px">
+                      <div class="progress-bar bg-danger" style="width: 0%"></div>
+                    </div>
+                  </div>
+                  <!-- End Progress Bar -->
+
+                  <!-- Total Feedback -->
+                  <div class="col-5">
+                    <span class="total-feedback text-secondart small-text fw-semibold color-trinary">0</span>
+                  </div>
+                  <!-- End Total Feedback -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product Review -->
+        </div>
+
+        <!--  Product Section -->
+        <div id="product" class="mt-4">
+          <div class="category-title d-grid mb-4">
+            <span class="fs-3 fw-bold">You may also like this</span>
+            <span class="text-secondary helper-text">You've never seen it before!</span>
+          </div>
+
+          <div class="col-12 product new-product-content d-flex flex-wrap gap-3">
+            <div class="card">
+              <img src="../../Assets/image/product.png" class="card-img-top" alt="..." />
+              <div class="card-body py-2 px-3 card-title-product d-flex flex-column">
+                <div class="product-title fw-semibold">Men's Formal suit - Black & White</div>
+                <span class="text-danger fw-semibold">$ 40.0</span>
+                <span class="color-trinary small-text">Zalora Cloth</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../../Assets/image/product.png" class="card-img-top" alt="..." />
+              <div class="card-body py-2 px-3 card-title-product d-flex flex-column">
+                <div class="product-title fw-semibold">Men's Formal suit - Black & White</div>
+                <span class="text-danger fw-semibold">$ 40.0</span>
+                <span class="color-trinary small-text">Zalora Cloth</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../../Assets/image/product.png" class="card-img-top" alt="..." />
+              <div class="card-body py-2 px-3 card-title-product d-flex flex-column">
+                <div class="product-title fw-semibold">Men's Formal suit - Black & White</div>
+                <span class="text-danger fw-semibold">$ 40.0</span>
+                <span class="color-trinary small-text">Zalora Cloth</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../../Assets/image/product.png" class="card-img-top" alt="..." />
+              <div class="card-body py-2 px-3 card-title-product d-flex flex-column">
+                <div class="product-title fw-semibold">Men's Formal suit - Black & White</div>
+                <span class="text-danger fw-semibold">$ 40.0</span>
+                <span class="color-trinary small-text">Zalora Cloth</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../../Assets/image/product.png" class="card-img-top" alt="..." />
+              <div class="card-body py-2 px-3 card-title-product d-flex flex-column">
+                <div class="product-title fw-semibold">Men's Formal suit - Black & White</div>
+                <span class="text-danger fw-semibold">$ 40.0</span>
+                <span class="color-trinary small-text">Zalora Cloth</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../../Assets/image/product.png" class="card-img-top" alt="..." />
+              <div class="card-body py-2 px-3 card-title-product d-flex flex-column">
+                <div class="product-title fw-semibold">Men's Formal suit - Black & White</div>
+                <span class="text-danger fw-semibold">$ 40.0</span>
+                <span class="color-trinary small-text">Zalora Cloth</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../../Assets/image/product.png" class="card-img-top" alt="..." />
+              <div class="card-body py-2 px-3 card-title-product d-flex flex-column">
+                <div class="product-title fw-semibold">Men's Formal suit - Black & White</div>
+                <span class="text-danger fw-semibold">$ 40.0</span>
+                <span class="color-trinary small-text">Zalora Cloth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End  Product Section -->
+      </div>
+    </main>
+    <!-- End Content -->
+
+    <!-- Modal Filtering -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header border-bottom border-2">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Filter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body px-0 overflow-x-hidden">
+            <section class="colors-filter border-bottom border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12 mb-2"><span class="fw-semibold">Colors</span></div>
+                <div class="col-12 d-flex gap-3 mt-3">
+                  <div class="color-option color-black rounded-circle"></div>
+
+                  <div class="color-option color-white shadow rounded-circle"></div>
+
+                  <div class="color-option color-red rounded-circle"></div>
+
+                  <div class="color-option color-gray rounded-circle"></div>
+
+                  <div class="color-option color-cream rounded-circle"></div>
+
+                  <div class="color-option color-blue rounded-circle"></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="sizes-filter border-bottom pt-2 border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12 mb-2"><span class="fw-semibold">Sizes</span></div>
+
+                <div class="col-12 d-flex gap-3 mt-3">
+                  <button class="sizes-btn btn border-1 border-secondary">S</button>
+                  <button class="sizes-btn btn btn-danger border-1 border-danger">M</button>
+                  <button class="sizes-btn btn btn-danger border-1 border-danger">L</button>
+                  <button class="sizes-btn btn border-1 border-secondary">XL</button>
+                  <button class="sizes-btn btn border-1 border-secondary">XS</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="category-filter border-bottom pt-2 border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12 mb-2"><span class="fw-semibold">Category</span></div>
+
+                <div class="col-12 d-flex gap-3 mt-3 flex-wrap">
+                  <button class="category-btn btn btn-danger border-1 border-danger">All</button>
+                  <button class="category-btn btn border-1 border-secondary">Woman</button>
+                  <button class="category-btn btn border-1 border-secondary">Man</button>
+                  <button class="category-btn btn border-1 border-secondary">Boys</button>
+                  <button class="category-btn btn border-1 border-secondary">Girls</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="brand-filter border-bottom pt-2 border-2 pb-4">
+              <div class="row px-4">
+                <div class="col-12"><span class="fw-semibold">Brand</span></div>
+
+                <div class="col-12">
+                  <select class="text-secondary form-select border-0 py-0 px-0 form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Adidas Originals, Jack & Jones, S.Oliver</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="d-flex pt-1 pb-4 gap-3 justify-content-center">
+            <button type="button" class="btn btn-transparent border-1 border-secondary rounded-pill px-5" data-bs-dismiss="modal">Discard</button>
+            <button type="button" class="btn btn-danger border-1 border-danger rounded-pill px-5 text-light">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Filtering -->
+
+    <script src="../../Assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
