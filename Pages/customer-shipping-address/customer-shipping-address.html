@@ -8,6 +8,8 @@
 
     <!-- Default Css -->
     <link rel="stylesheet" href="../../Assets/css/style.css" />
+    <link rel="stylesheet" href="../../Assets/css/navbar.css" />
+
     <link rel="stylesheet" href="../../Assets/css/customer-shipping-address.css" />
 
     <!-- Font Awesome CDN -->
@@ -23,61 +25,78 @@
   </head>
   <body>
     <!-- Start Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg shadow" style="background-color: #fff">
-      <div class="container pb-1">
-        <!-- Nav Logo -->
-        <a class="navbar-brand d-flex align-items-center me-4" href="#">
-          <img src="../../Assets/image/logo.png" alt="" class="img-fluid small-logo" />
-          <span class="text-danger fs-4 ms-2 fw-bold">Blanja</span></a
-        >
-        <!-- End Nav Logo -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg shadow" style="background-color: #fff">
+        <div class="container pb-1 d-flex">
+          <!-- Nav Logo -->
+          <a class="navbar-brand d-flex align-items-center me-4" href="https://prototype-shop-app-pijarcamp.vercel.app" class="btn fs-5 color-trinary">
+            <img src="../../Assets/image/logo.png" alt="" class="img-fluid small-logo" />
+            <span class="text-danger fs-4 ms-2 fw-bold">Blanja</span></a
+          >
+          <!-- End Nav Logo -->
 
-        <!-- Nav Menu Mobile Mode -->
-        <div class="d-flex d-lg-none gap-2 align-items-center">
-          <a href="#" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
+          <!-- Search and Filter Tablet Mode -->
+          <div class="d-none d-md-flex d-lg-none ms-auto w-75 mt-2">
+            <div class="w-100 d-flex">
+              <div class="search-input position-relative w-100 d-flex">
+                <input class="form-control me-2 rounded-pill w-100" type="text" placeholder="Search" aria-label="Search" />
 
-          <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-bell"></i></a>
-
-          <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
-
-          <a href="" class="profile">
-            <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
-          </a>
-        </div>
-        <!-- End Nav menu Mobile Mode -->
-
-        <div class="navbar-collapse mt-2">
-          <!-- Search and Filtering -->
-          <div class="col-12 col-lg-7 d-flex mt-md-0">
-            <div class="col-11">
-              <div class="input-form position-relative me-2">
-                <input class="form-control me-2 rounded-pill" type="text" placeholder="Search" aria-label="Search" />
-
-                <button class="btn position-absolute search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn position-absolute search-btn me-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              <div class="filter">
+                <button class="btn border-trinary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-filter text-trinary"></i></button>
               </div>
             </div>
-            <div class="col-1 d-flex justify-content-end">
-              <button class="btn border-trinary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-filter text-trinary"></i></button>
+          </div>
+          <!-- End Search and Filter Tablet Mode -->
+
+          <!-- Search and Filter Mobile Mode -->
+          <div class="d-sm-flex d-md-none d-lg-none ms-auto mt-2">
+            <div class="w-100">
+              <div class="search-input position-relative w-100 d-flex">
+                <button class="btn btn-danger search-btn-mobile rounded-circle me-2" type="submit" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
             </div>
           </div>
-          <!-- End Search and Filtering -->
+          <!-- End Search and Filter Mobile Mode -->
+
+          <!-- Search and Filter Desktop Mode -->
+          <div class="navbar-collapse mt-2 d-none">
+            <!-- Search and Filtering -->
+            <div class="col-12 col-lg-9 d-flex">
+              <div class="input-form w-100 d-flex">
+                <div class="search-input position-relative w-100 d-flex">
+                  <input class="form-control me-2 rounded-pill w-100" type="text" placeholder="Search" aria-label="Search" />
+
+                  <button class="btn position-absolute search-btn me-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="filter">
+                  <button class="btn border-trinary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-filter text-trinary"></i></button>
+                </div>
+              </div>
+            </div>
+            <!-- End Search and Filtering -->
+          </div>
+          <!-- End Search and Filter Desktop Mode -->
 
           <!-- Nav Menu Desktop Mode -->
-          <div class="d-lg-flex d-none gap-3 ms-auto align-items-center">
-            <a href="#" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="d-flex mt-2 d-md-block d-none">
+            <div class="d-lg-flex d-none gap-3 ms-auto align-items-center">
+              <a href="https://prototype-shop-app-pijarcamp.vercel.app/Pages/my-bag/my-bag.html" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
 
-            <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-bell"></i></a>
+              <a href="" class="color-trinary btn fs-5"><i class="fa-regular fa-bell"></i></a>
 
-            <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://prototype-shop-app-pijarcamp.vercel.app/Pages/chat/chat.html" class="btn fs-5 color-trinary" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
 
-            <a href="" class="profile">
-              <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
-            </a>
+              <a href="https://prototype-shop-app-pijarcamp.vercel.app/Pages/profile/profile.html" class="profile">
+                <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
+              </a>
+            </div>
           </div>
           <!-- End Nav Menu Desktop Mode -->
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- End Navbar -->
 
     <!-- Content -->
@@ -168,6 +187,44 @@
       </section>
     </main>
     <!-- End Content -->
+
+    <!-- Bottom Bar -->
+    <div class="row">
+      <div class="col-12 bottom-bar py-1">
+        <div class="d-flex d-lg-none gap-2 justify-content-around align-items-center">
+          <a href="https://prototype-shop-app-pijarcamp.vercel.app/Pages/my-bag/my-bag.html" class="btn fs-5 color-trinary"><i class="fa-solid fa-cart-shopping"></i></a>
+
+          <a href="#" class="btn fs-5 color-trinary"><i class="fa-regular fa-bell"></i></a>
+
+          <a href="https://prototype-shop-app-pijarcamp.vercel.app/Pages/chat/chat.html" class="btn fs-5 color-trinary"><i class="fa-regular fa-envelope"></i></a>
+
+          <a href="https://prototype-shop-app-pijarcamp.vercel.app/Pages/profile/profile.html" class="profile">
+            <img src="../../Assets/image/profile.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Bottom Bar -->
+
+    <!-- Modal Search -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content min-vh-100">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 d-flex gap-2">
+                <input type="text" class="form-control input-search shadow-none border-0 border-bottom rounded-0 bg-light bg-transparent" name="search" placeholder="Search here.." />
+                <button class="btn border-trinary rounded-0" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-filter text-trinary"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Search -->
 
     <!-- Modal Form Address -->
     <div class="modal fade modal-address" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
