@@ -1,0 +1,11 @@
+.order-menu li {
+  cursor: pointer;
+}
+.main-colom {
+  background-color: #fff;
+  height: 100%;
+}
+
+#content {
+  height: 100vh;
+}
