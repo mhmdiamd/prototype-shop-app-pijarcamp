@@ -3,6 +3,10 @@
   margin-top: -5px;
 }
 
+#content {
+  height: 100% !important;
+}
+
 main {
   overflow-x: hidden;
 }
